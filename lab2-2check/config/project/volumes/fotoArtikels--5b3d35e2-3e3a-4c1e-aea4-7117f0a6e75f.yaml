@@ -1,0 +1,50 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  f1cf15c3-aa3f-481c-9409-bfb3d1ed4028:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:05:53+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: b52a431b-4bf8-4112-a6d8-cad483c362ae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f05448fa-90b5-4ec6-b7ac-763642b3a80b
+        userCondition: null
+fs: fotoArtikels
+handle: fotoArtikels
+name: 'foto artikels'
+sortOrder: 1
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: fotoArtikels
+transformSubpath: ''

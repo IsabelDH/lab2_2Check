@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  b4f3656a-cad7-4537-a59b-545acadbc1c1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-19T18:43:12+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a17d96ba-4e4b-4317-9eb6-25e992dcf718
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:44:37+00:00'
+            elementCondition: null
+            fieldUid: aca73f93-ee27-4646-8d4f-4ac17e2ac440 # foto
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fae07936-3095-4af5-add6-1048dd2a71ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:44:37+00:00'
+            elementCondition: null
+            fieldUid: 2c8f1234-07c8-4262-baa9-5d2d971870a0 # header artikels
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fb576e36-6bc2-4660-9919-f6746fd3526b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:44:37+00:00'
+            elementCondition: null
+            fieldUid: 8435d9ed-8c6d-480c-9880-338bbef57700 # Ondertekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16d955a1-a952-419f-95f3-58108d6cfa82
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:44:37+00:00'
+            elementCondition: null
+            fieldUid: 5e6ea322-3552-4d3a-bebd-c4071ff51416 # datum
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ef1fcf48-01e3-4ab3-8d53-59e17d36cfc5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-19T18:44:37+00:00'
+            elementCondition: null
+            fieldUid: 57eae1ce-7a63-4f46-8679-22d180b96c37 # like
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e23ab59f-2679-4002-b656-d60bc7bf99c3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5a624fc2-bc28-4da9-86d1-d3def142b77b
+        userCondition: null
+handle: artikelsPolitiek
+hasTitleField: true
+icon: ''
+name: 'artikels politiek'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

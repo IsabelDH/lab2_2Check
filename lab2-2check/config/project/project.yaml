@@ -1,12 +1,40 @@
-dateModified: 1724086126
+dateModified: 1724093396
 email:
   fromEmail: isa.haes@hotmail.com
   fromName: 2Check
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  fotoArtikels:
+    hasUrls: true
+    name: foto_artikels
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
+  likeButton:
+    hasUrls: true
+    name: 'like button'
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
 meta:
   __names__:
+    2c8f1234-07c8-4262-baa9-5d2d971870a0: 'header artikels' # header artikels
+    02d6d5d6-24c9-43f0-ac60-880b4f29cdf7: carousel # carousel
+    4ff99ef7-44b8-40c2-ae5e-5ffe49547c5e: 'Public Schema' # Public Schema
+    5b3d35e2-3e3a-4c1e-aea4-7117f0a6e75f: 'foto artikels' # foto artikels
+    5e6ea322-3552-4d3a-bebd-c4071ff51416: datum # datum
+    6a29b368-5d9f-4bc6-bad9-8ddfd5598443: artikels # artikels
     6ce5199d-3c4c-465d-81f1-7d9cc92c7cb5: 2Check # 2Check
+    7b7e2a12-db70-497e-b18a-a7c30c5091a2: 'carousel default' # carousel default
+    9bd313e9-1842-4821-8e26-a7db5c405e78: unlike # unlike
+    57eae1ce-7a63-4f46-8679-22d180b96c37: like # like
     72bbff78-21f3-4733-a195-230c2740ee45: 2Check # 2Check
+    8435d9ed-8c6d-480c-9880-338bbef57700: Ondertekst # Ondertekst
+    953405b4-0756-4515-9553-38073cb87d35: 'artikels nieuw' # artikels nieuw
+    aca73f93-ee27-4646-8d4f-4ac17e2ac440: foto # foto
+    af5b90f4-180a-44b4-8b01-aa518a66f395: 'artikels politiek' # artikels politiek
 system:
   edition: solo
   live: true

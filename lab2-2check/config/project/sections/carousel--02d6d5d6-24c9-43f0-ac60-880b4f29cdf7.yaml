@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 7b7e2a12-db70-497e-b18a-a7c30c5091a2 # carousel default
+handle: carousel
+maxAuthors: 1
+name: carousel
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: carousel/_entry.twig
+    uriFormat: 'carousel/{slug}'
+type: channel

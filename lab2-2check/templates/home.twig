@@ -1,0 +1,238 @@
+{% extends "_layout" %}
+
+{% block content %}
+  <h1>Ontdek jouw overheid</h1>
+    <p class="categorie-text">Categorieën</p>
+    <div class="categories">
+      <a href="home.twig" class="categorie active" data-category="nieuw"
+        >Nieuw</a
+      >
+      <a href="politiek.twig" class="categorie" data-category="politiek"
+        >Politiek</a
+      >
+      <a href="economie.twig" class="categorie" data-category="economie"
+        >Economie</a
+      >
+      <a href="gezondheid.twig" class="categorie" data-category="gezondheid"
+        >Gezondheid</a
+      >
+      <a href="klimaat.twig" class="categorie" data-category="klimaat"
+        >Klimaat</a
+      >
+    </div>
+  
+    <div id="carousel">
+    {% set entries = craft.entries().section('carousel') %}
+    {% for entry in entries %}
+      <a href="artikel.html">
+        <div class="carousel-item">
+          <img
+            src="{{entry.foto.one() ? entry.foto.one().url : '/path/to/default-image.jpg'}}"
+            alt="maaltijd school"
+            class="carousel-image"
+          />
+          <div class="carousel-flex">
+            <p class="carousel-titel">{{entry.headerartikels}}</p>
+            <p class="carousel-text">
+              {{entry.ondertekst}}
+            </p>
+            <span>{{entry.datum}}</span>
+          </div>
+        </div>
+      </a>
+       {% endfor %}
+    </div>
+    
+    <div class="carousel-indicators"></div>
+    
+
+    <div class="artikels">
+    {% set entries = craft.entries().section('artikels') %}
+    {% for entry in entries %}
+      <a href="#">
+        <div class="artikel">
+          <img
+            class="artikel-image"
+            src="{{entry.foto.one() ? entry.foto.one().url : '/path/to/default-image.jpg'}}"
+            alt="oxfam"
+          />
+          <div class="artikel-text">
+            <h2 class="artikel-h2">{{entry.headerartikels}}</h2>
+            <p class="artikel-p">
+              {{entry.ondertekst}}
+            </p>
+            <span>{{entry.datum}}</span>
+          </div>
+          <img class="like" src="{{entry.like.one() ? entry.like.one().url : '/path/to/default-image.jpg'}}" />
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="footer">
+      <a href="home.html">
+        <div class="footer-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#00263d"
+              d="M20 10a1 1 0 1 0-2 0zM6 10a1 1 0 0 0-2 0zm14.293 2.707a1 1 0 0 0 1.414-1.414zM12 3l.707-.707a1 1 0 0 0-1.414 0zm-9.707 8.293a1 1 0 1 0 1.414 1.414zM7 22h10v-2H7zm13-3v-9h-2v9zM6 19v-9H4v9zm15.707-7.707l-9-9l-1.414 1.414l9 9zm-10.414-9l-9 9l1.414 1.414l9-9zM17 22a3 3 0 0 0 3-3h-2a1 1 0 0 1-1 1zM7 20a1 1 0 0 1-1-1H4a3 3 0 0 0 3 3z"
+            />
+          </svg>
+          <span>Home</span>
+        </div>
+      </a>
+      <a href="zoeken.html">
+        <div class="footer-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path
+                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+              />
+              <path
+                fill="#00263d"
+                d="M10.5 2a8.5 8.5 0 1 0 5.262 15.176l3.652 3.652a1 1 0 0 0 1.414-1.414l-3.652-3.652A8.5 8.5 0 0 0 10.5 2M4 10.5a6.5 6.5 0 1 1 13 0a6.5 6.5 0 0 1-13 0"
+              />
+            </g>
+          </svg>
+          <span>Zoek</span>
+        </div>
+      </a>
+      <a href="meldingen.html">
+        <div class="footer-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#00263d"
+              d="M18 10a6 6 0 0 0-12 0v8h12zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0zM9.5 21h5a2.5 2.5 0 0 1-5 0"
+            />
+          </svg>
+          <span>Meldingen</span>
+        </div>
+      </a>
+      <a href="profiel.html">
+        <div class="footer-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            height="35"
+            viewBox="0 0 24 24"
+          >
+            <g fill="none" stroke="#00263d" stroke-width="2">
+              <path
+                stroke-linejoin="round"
+                d="M4 18a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"
+              />
+              <circle cx="12" cy="7" r="3" />
+            </g>
+          </svg>
+          <span>Profiel</span>
+        </div>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.getElementById("carousel");
+        const items = carousel.getElementsByClassName("carousel-item");
+        const indicatorsContainer = document.querySelector(
+          ".carousel-indicators"
+        );
+
+        // Genereer de indicatoren
+        for (let i = 0; i < items.length; i++) {
+          const indicator = document.createElement("div");
+          indicator.classList.add("indicator");
+          if (i === 0) indicator.classList.add("active");
+          indicatorsContainer.appendChild(indicator);
+
+          // Maak de indicatoren klikbaar
+          indicator.addEventListener("click", () => {
+            scrollToSlide(i);
+          });
+        }
+
+        // Bijwerken van de actieve indicator op scroll
+        carousel.addEventListener("scroll", () => {
+          const scrollPosition = carousel.scrollLeft;
+          const width = carousel.offsetWidth;
+          const activeIndex = Math.round(scrollPosition / width);
+          updateActiveIndicator(activeIndex);
+        });
+
+        function scrollToSlide(index) {
+          const width = carousel.offsetWidth;
+          carousel.scrollLeft = width * index;
+          updateActiveIndicator(index);
+        }
+
+        function updateActiveIndicator(activeIndex) {
+          const indicators = document.querySelectorAll(
+            ".carousel-indicators .indicator"
+          );
+          indicators.forEach((indicator, index) => {
+            indicator.classList.toggle("active", index === activeIndex);
+          });
+        }
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const categories = document.querySelectorAll(".categorie");
+
+        categories.forEach((category) => {
+          category.addEventListener("click", (event) => {
+            // event.preventDefault(); // Voorkom de standaard linkactie
+
+            // Verwijder de actieve klasse van alle categorieën
+            categories.forEach((cat) => cat.classList.remove("active"));
+
+            // Voeg de actieve klasse toe aan de aangeklikte categorie
+            category.classList.add("active");
+          });
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Selecteer alle afbeeldingen met de klasse 'like'
+        const likeImages = document.querySelectorAll(".like");
+
+        likeImages.forEach((likeImage) => {
+          // Voeg een klik-eventlistener toe aan elke afbeelding
+          likeImage.addEventListener("click", () => {
+            // Wissel de src tussen 'like.png' en 'unlike.png'
+            if (likeImage.src.includes("unlike.png")) {
+              likeImage.src = "images/like.png";
+            } else {
+              likeImage.src = "images/unlike.png";
+            }
+          });
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+          const currentPage = window.location.pathname.split("/").pop(); // Verkrijg de huidige pagina naam
+          const categories = document.querySelectorAll(".categorie");
+
+          categories.forEach((category) => {
+            if (category.getAttribute("href") === currentPage) {
+              category.classList.add("active");
+            } else {
+              category.classList.remove("active");
+            }
+          });
+        });
+      });
+    </script>
+    
+{% endblock  %}
