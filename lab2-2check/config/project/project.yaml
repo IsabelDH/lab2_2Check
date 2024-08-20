@@ -1,4 +1,4 @@
-dateModified: 1724171260
+dateModified: 1724172973
 email:
   fromEmail: isa.haes@hotmail.com
   fromName: 2Check
@@ -26,20 +26,24 @@ meta:
     4ff99ef7-44b8-40c2-ae5e-5ffe49547c5e: 'Public Schema' # Public Schema
     5b3d35e2-3e3a-4c1e-aea4-7117f0a6e75f: 'foto artikels' # foto artikels
     5e6ea322-3552-4d3a-bebd-c4071ff51416: datum # datum
-    6a29b368-5d9f-4bc6-bad9-8ddfd5598443: artikels # artikels
+    6a29b368-5d9f-4bc6-bad9-8ddfd5598443: 'nieuw artikels' # nieuw artikels
     6ce5199d-3c4c-465d-81f1-7d9cc92c7cb5: 2Check # 2Check
     7b7e2a12-db70-497e-b18a-a7c30c5091a2: 'carousel default' # carousel default
+    8f3c7b4d-35c5-44d6-82ea-8078c61b9648: 'gezondheid artikels' # gezondheid artikels
     9bae6ee1-9bcc-4085-a536-e952a459f30e: 'title home' # title home
     9bd313e9-1842-4821-8e26-a7db5c405e78: unlike # unlike
     57eae1ce-7a63-4f46-8679-22d180b96c37: like # like
     72bbff78-21f3-4733-a195-230c2740ee45: 2Check # 2Check
     8435d9ed-8c6d-480c-9880-338bbef57700: Ondertekst # Ondertekst
     8806ec29-7040-4c68-b837-653a97b1b53f: 'header home' # header home
+    14327aad-e9d5-4b95-b024-a531ee6ef91d: 'politiek artikels' # politiek artikels
     953405b4-0756-4515-9553-38073cb87d35: 'artikels nieuw' # artikels nieuw
     a6dc8106-631a-4f64-92ba-ed7c809e459b: 'header home' # header home
     a98c0992-0d12-4610-b20f-d26dc4bbc2a6: categories # categories
     aca73f93-ee27-4646-8d4f-4ac17e2ac440: foto # foto
     af5b90f4-180a-44b4-8b01-aa518a66f395: 'artikels politiek' # artikels politiek
+    c1766d49-d9d6-45d2-b183-e17d3a217c0d: 'economie artikels' # economie artikels
+    e1ff3449-bf98-4e59-a71b-827377851be1: 'klimaat artikels' # klimaat artikels
     eba72f32-6495-4b39-8d4a-2fe2627bd933: categories # categories
     f30ffe35-cfd0-4ec3-abc1-63f83d87023e: categories # categories
 system:

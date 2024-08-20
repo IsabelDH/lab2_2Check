@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - af5b90f4-180a-44b4-8b01-aa518a66f395 # artikels politiek
+handle: economieArtikels
+maxAuthors: 1
+name: 'economie artikels'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: economie-artikels/_entry.twig
+    uriFormat: 'economie-artikels/{slug}'
+type: channel
