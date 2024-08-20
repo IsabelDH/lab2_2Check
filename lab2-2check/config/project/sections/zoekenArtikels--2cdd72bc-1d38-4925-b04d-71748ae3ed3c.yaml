@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - ac064d3d-58bb-4e5a-acc4-ef5b3ee70329 # artikels zoeken
+handle: zoekenArtikels
+maxAuthors: 1
+name: 'zoeken artikels'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: zoeken-artikels/_entry.twig
+    uriFormat: 'zoeken-artikels/{slug}'
+type: channel

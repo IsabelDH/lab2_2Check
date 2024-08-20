@@ -1,0 +1,131 @@
+color: null
+fieldLayouts:
+  c1473bd8-f507-4cf3-aa36-963e87672c21:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-20T18:03:59+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 38d988a5-e8db-4b5d-b627-2fa91dc5785d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:05:25+00:00'
+            elementCondition: null
+            fieldUid: aca73f93-ee27-4646-8d4f-4ac17e2ac440 # foto
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 97ad343d-80d8-4c3c-942e-f19742d2ebba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:05:25+00:00'
+            elementCondition: null
+            fieldUid: 2c8f1234-07c8-4262-baa9-5d2d971870a0 # header artikels
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9daa1afb-c635-435c-a65b-c012514811c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:05:25+00:00'
+            elementCondition: null
+            fieldUid: 8435d9ed-8c6d-480c-9880-338bbef57700 # Ondertekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86d9a00b-adb2-4de2-841d-c15bec330fe2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:05:25+00:00'
+            elementCondition: null
+            fieldUid: 5e6ea322-3552-4d3a-bebd-c4071ff51416 # datum
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 775adac1-7268-4d99-a460-956bc21f19ed
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T18:05:25+00:00'
+            elementCondition: null
+            fieldUid: 57eae1ce-7a63-4f46-8679-22d180b96c37 # like
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 706624f0-47ad-4388-888c-7d52d2ab813c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d3db25c7-ff98-42fc-acb8-f91c608a6680
+        userCondition: null
+handle: artikelsZoeken
+hasTitleField: true
+icon: ''
+name: 'artikels zoeken'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
