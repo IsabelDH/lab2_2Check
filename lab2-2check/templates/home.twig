@@ -38,7 +38,7 @@
     <div id="carousel">
     {% set entries = craft.entries().section('carousel') %}
     {% for entry in entries %}
-      <a href="artikel.html">
+      <a href="artikel.twig">
         <div class="carousel-item">
           <img
             src="{{entry.foto.one() ? entry.foto.one().url : '/path/to/default-image.jpg'}}"

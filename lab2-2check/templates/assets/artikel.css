@@ -1,0 +1,28 @@
+.button_9 {
+  background-color: #b95927;
+  color: #f6f6f6;
+  margin-bottom: 20px;
+}
+.artikels {
+  padding-bottom: 20px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center; 
+  text-align: center; 
+  width: 100%; 
+  margin-bottom: 20px;
+}
+
+.lijn {
+  flex: 1;
+  border-bottom: 1px solid #00263D;
+  margin: 0 10px; 
+}
+
+.of {
+  margin: 0; 
+  padding: 0; 
+  white-space: nowrap; 
+}
