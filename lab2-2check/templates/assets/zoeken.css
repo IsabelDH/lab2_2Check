@@ -1,0 +1,12 @@
+.search {
+    position: relative;
+    top: 200px;
+  }
+  .subtitle {
+    position: relative;
+    top: 250px;
+    font-weight: 300;
+    font-size: 1.25em;
+    margin: 0 5% 35px 5%;
+  }
+  
