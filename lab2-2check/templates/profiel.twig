@@ -3,7 +3,7 @@
 {% block content %}
     <div class="profiel-instellingen">
       <h1>Profiel</h1>
-      <a href="instellingen.html">
+      <a href="instellingen.twig">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="35"
@@ -22,12 +22,19 @@
     <div class="profiel-informatie">
       <img class="profiel_foto" src="images/profiel_foto.png" alt="" />
       <div class="informatie">
+        <div>
+            <img
+                class="profielfoto"
+                src=""
+                alt="oxfam"
+            />
+        </div>
         <h2 class="name">John Doe</h2>
         <div class="email">
           <span> Email </span>
           <p>John@Doe.com</p>
         </div>
-        <a class="button_10 button" href="profiel_bewerken.html">Bewerken</a>
+        <a class="button_10 button" href="profiel_bewerken.twig">Bewerken</a>
         </div>
        
       
@@ -36,39 +43,26 @@
     <div class="gerelateerde-artikelen">
       <h3 class="gerelateerde-artikelen-h3">Favoriete artikelen</h3>
       <div class="artikels">
+      {% set entries = craft.entries().section('politiekArtikels') %}
+    {% for entry in entries %}
       <a href="#">
         <div class="artikel">
           <img
             class="artikel-image"
-            src="images/duurzame_energie_1.png"
+            src="{{entry.foto.one() ? entry.foto.one().url : '/path/to/default-image.jpg'}}"
             alt="oxfam"
           />
           <div class="artikel-text">
-            <h2 class="artikel-h2">Grote investeringen in duurzame energie</h2>
+            <h2 class="artikel-h2">{{entry.headerartikels}}</h2>
             <p class="artikel-p">
-              België staat in top 10 van landen met meeste CO2-uitstoot, maar
-              het hangt ervan af wat je exact berekent
+              {{entry.ondertekst}}
             </p>
+            <span>{{entry.datum}}</span>
           </div>
-          <img class="like" src="images/unlike.png" alt="like" />
+          <img class="like" src="{{entry.like.one() ? entry.like.one().url : '/path/to/default-image.jpg'}}" />
         </div>
       </a>
-
-      <a href="#">
-        <div class="artikel">
-          <img class="artikel-image" src="images/begroting.jpg" alt="oxfam" />
-          <div class="artikel-text">
-            <h2 class="artikel-h2">Grote investeringen in duurzame energie</h2>
-            <p class="artikel-p">
-              België staat in top 10 van landen met meeste CO2-uitstoot, maar
-              het hangt ervan af wat je exact berekent
-            </p>
-          </div>
-          <img class="like" src="images/unlike.png" alt="like" />
-        </div>
-      </a>
-    </div>
-      </div>
+      {% endfor %}
     </div>
 
 
