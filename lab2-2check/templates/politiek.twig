@@ -1,7 +1,9 @@
 {% extends "_layoutCategorie" %}
 
 {% block content %}
-    <h1>Ontdek jouw overheid</h1>
+    {% set entries = craft.entries().section('headerHome') %}
+    {% for entry in entries %}
+  <h1>{{entry.titleHome}}</h1>
     <p class="categorie-text">Categorieën</p>
     <div class="categories">
       <a href="home.twig" class="categorie" data-category="nieuw">Nieuw</a>
@@ -18,6 +20,7 @@
         >Klimaat</a
       >
     </div>
+      {% endfor %}
     <div class="artikels">
       <a href="#">
         <div class="artikel">

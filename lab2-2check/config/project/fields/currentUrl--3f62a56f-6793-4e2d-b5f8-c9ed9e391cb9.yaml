@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: currentUrl
+instructions: null
+name: 'current url'
+searchable: false
+settings:
+  maxLength: 255
+  typeSettings:
+    __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              -
+                - 'section:f30ffe35-cfd0-4ec3-abc1-63f83d87023e' # categories
+  types:
+    - url
+    - entry
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

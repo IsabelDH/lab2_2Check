@@ -1,13 +1,13 @@
 {% extends "_layout" %}
 
 {% block content %}
-  <h1>Feiten altijd dichtbij!</h1>
+ {% set entries = craft.entries().section('headerHome') %}
+    {% for entry in entries %}
+  <h1>{{entry.titleHome}}</h1>
     <p class="categorie-text">Categorieën</p>
-    <div class="categories">
-      <a href="home.twig" class="categorie active" data-category="nieuw"
-        >Nieuw</a
-      >
-      <a href="politiek.twig" class="categorie" data-category="politiek"
+     <div class="categories">
+      <a href="home.twig" class="categorie active" data-category="nieuw">Nieuw</a>
+      <a href="politiek.twig" class="categorie " data-category="politiek"
         >Politiek</a
       >
       <a href="economie.twig" class="categorie" data-category="economie"
@@ -20,7 +20,21 @@
         >Klimaat</a
       >
     </div>
-  
+    {# {% set categories = craft.entries().section('categories').all() %}
+    {% set currentUrl = craft.app.request.getUrl %}
+
+    <div class="categories">
+     {% for cat in categories %}
+     {% set isActive = cat.Url == currentUrl %}
+    <a href="{{ cat.Url }}" class="categorie {% if isActive %}active{% endif %}" data-category="{{ cat.slug }}">
+      {{ cat.title }}
+    </a>
+       {% endfor %}
+    </div> #}
+
+
+    
+  {% endfor %}
     <div id="carousel">
     {% set entries = craft.entries().section('carousel') %}
     {% for entry in entries %}

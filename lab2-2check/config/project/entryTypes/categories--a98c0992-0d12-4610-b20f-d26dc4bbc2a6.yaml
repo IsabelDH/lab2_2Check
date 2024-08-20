@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  58c9acb2-b94d-4232-bfcb-5bbcb71ac7d7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-20T15:44:00+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eb022c57-e8fb-4252-926a-1eda488f5714
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T15:45:10+00:00'
+            elementCondition: null
+            fieldUid: eba72f32-6495-4b39-8d4a-2fe2627bd933 # categories
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 372d7bfa-074f-4d50-876d-48f0f47e6022
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-20T16:03:56+00:00'
+            elementCondition: null
+            fieldUid: 3f62a56f-6793-4e2d-b5f8-c9ed9e391cb9 # current url
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f53a080a-4ad4-419a-9be3-490cbe90e787
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 74c917c0-8b34-4327-97ab-746600a44027
+        userCondition: null
+handle: categories
+hasTitleField: true
+icon: ''
+name: categories
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
