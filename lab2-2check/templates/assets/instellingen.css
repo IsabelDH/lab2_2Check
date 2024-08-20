@@ -1,0 +1,42 @@
+p {
+  position: relative;
+  top: 225px;
+  margin: 0 5%;
+}
+.instelling {
+  flex: 1 1 calc(50% - 20px);
+  height: 185px;
+  background-color: #93acc2;
+  border-radius: 13px;
+  margin: 10px;
+  color: #00263d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.instelling.active {
+  background-color: #00263d;
+  color: #f6f6f6;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 800px;
+  margin: 10px;
+  position: relative;
+  top: 250px;
+}
+.button_7 {
+  background-color: #b95927;
+  color: #f6f6f6;
+  position: relative;
+  top: 300px;
+}
+.button_8 {
+  background-color: #cbb391;
+  position: relative;
+  top: 325px;
+}
