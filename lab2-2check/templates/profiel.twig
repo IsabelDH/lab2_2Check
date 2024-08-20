@@ -1,0 +1,93 @@
+{% extends "_layoutProfiel" %}
+
+{% block content %}
+    <div class="profiel-instellingen">
+      <h1>Profiel</h1>
+      <a href="instellingen.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          viewBox="0 0 24 24"
+        >
+          <g fill="none" stroke="#00263d" stroke-width="1.5">
+            <circle cx="12" cy="12" r="3" />
+            <path
+              d="M13.765 2.152C13.398 2 12.932 2 12 2s-1.398 0-1.765.152a2 2 0 0 0-1.083 1.083c-.092.223-.129.484-.143.863a1.62 1.62 0 0 1-.79 1.353a1.62 1.62 0 0 1-1.567.008c-.336-.178-.579-.276-.82-.308a2 2 0 0 0-1.478.396C4.04 5.79 3.806 6.193 3.34 7s-.7 1.21-.751 1.605a2 2 0 0 0 .396 1.479c.148.192.355.353.676.555c.473.297.777.803.777 1.361s-.304 1.064-.777 1.36c-.321.203-.529.364-.676.556a2 2 0 0 0-.396 1.479c.052.394.285.798.75 1.605c.467.807.7 1.21 1.015 1.453a2 2 0 0 0 1.479.396c.24-.032.483-.13.819-.308a1.62 1.62 0 0 1 1.567.008c.483.28.77.795.79 1.353c.014.38.05.64.143.863a2 2 0 0 0 1.083 1.083C10.602 22 11.068 22 12 22s1.398 0 1.765-.152a2 2 0 0 0 1.083-1.083c.092-.223.129-.483.143-.863c.02-.558.307-1.074.79-1.353a1.62 1.62 0 0 1 1.567-.008c.336.178.579.276.819.308a2 2 0 0 0 1.479-.396c.315-.242.548-.646 1.014-1.453s.7-1.21.751-1.605a2 2 0 0 0-.396-1.479c-.148-.192-.355-.353-.676-.555A1.62 1.62 0 0 1 19.562 12c0-.558.304-1.064.777-1.36c.321-.203.529-.364.676-.556a2 2 0 0 0 .396-1.479c-.052-.394-.285-.798-.75-1.605c-.467-.807-.7-1.21-1.015-1.453a2 2 0 0 0-1.479-.396c-.24.032-.483.13-.82.308a1.62 1.62 0 0 1-1.566-.008a1.62 1.62 0 0 1-.79-1.353c-.014-.38-.05-.64-.143-.863a2 2 0 0 0-1.083-1.083Z"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+    <div class="profiel-informatie">
+      <img class="profiel_foto" src="images/profiel_foto.png" alt="" />
+      <div class="informatie">
+        <h2 class="name">John Doe</h2>
+        <div class="email">
+          <span> Email </span>
+          <p>John@Doe.com</p>
+        </div>
+        <a class="button_10 button" href="profiel_bewerken.html">Bewerken</a>
+        </div>
+       
+      
+    </div>
+   
+    <div class="gerelateerde-artikelen">
+      <h3 class="gerelateerde-artikelen-h3">Favoriete artikelen</h3>
+      <div class="artikels">
+      <a href="#">
+        <div class="artikel">
+          <img
+            class="artikel-image"
+            src="images/duurzame_energie_1.png"
+            alt="oxfam"
+          />
+          <div class="artikel-text">
+            <h2 class="artikel-h2">Grote investeringen in duurzame energie</h2>
+            <p class="artikel-p">
+              België staat in top 10 van landen met meeste CO2-uitstoot, maar
+              het hangt ervan af wat je exact berekent
+            </p>
+          </div>
+          <img class="like" src="images/unlike.png" alt="like" />
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="artikel">
+          <img class="artikel-image" src="images/begroting.jpg" alt="oxfam" />
+          <div class="artikel-text">
+            <h2 class="artikel-h2">Grote investeringen in duurzame energie</h2>
+            <p class="artikel-p">
+              België staat in top 10 van landen met meeste CO2-uitstoot, maar
+              het hangt ervan af wat je exact berekent
+            </p>
+          </div>
+          <img class="like" src="images/unlike.png" alt="like" />
+        </div>
+      </a>
+    </div>
+      </div>
+    </div>
+
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Selecteer alle afbeeldingen met de klasse 'like'
+        const likeImages = document.querySelectorAll(".like");
+
+        likeImages.forEach((likeImage) => {
+          // Voeg een klik-eventlistener toe aan elke afbeelding
+          likeImage.addEventListener("click", () => {
+            // Wissel de src tussen 'like.png' en 'unlike.png'
+            if (likeImage.src.includes("unlike.png")) {
+              likeImage.src = "images/like.png";
+            } else {
+              likeImage.src = "images/unlike.png";
+            }
+          });
+        });
+      });
+    </script>
+{% endblock  %}

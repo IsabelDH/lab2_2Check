@@ -1,0 +1,65 @@
+h1 {
+  position: unset;
+  margin-left: 0;
+}
+.profiel-instellingen {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 125px 5% 20px 5%;
+}
+.profiel-informatie {
+  margin: 0 5%;
+  display: flex;
+  flex-direction: row;
+}
+.informatie {
+  display: flex;
+  flex-direction: column;
+  /* margin: 50px; */
+}
+.profiel_foto {
+  width: 35vw;
+  height: auto;
+  margin-right: 35px;
+}
+.meldingen_kat {
+  width: 75%;
+  position: relative;
+  top: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.switch {
+  position: relative;
+  top: 300px;
+  margin: 0 auto;
+  display: block; /* Zorgt ervoor dat de switch als blokelement wordt weergegeven zodat margin auto werkt */
+}
+
+.hidden {
+  display: none;
+}
+.artikels {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.gerelateerde-artikelen-h3 {
+  margin: 20px 5% 10px 5%;
+  color: #b95927;
+  font-weight: 400;
+  font-size: 20px;
+}
+.button_10 {
+  margin: 0;
+  margin-top: 10px;
+  background-color: #cbb391;
+  width: 46vw;
+}
+.email {
+  margin: 10px 0;
+}
+.email span {
+  color: rgba(0, 38, 61, 0.5);
+}
