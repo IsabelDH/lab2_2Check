@@ -1,0 +1,128 @@
+{% extends "_layoutMeldingen" %}
+
+{% block content %}
+    <h1>Meldingen</h1>
+    <h2 class="subtitle">Oh sorry! <br> Nog geen meldingen voor jou.</h2>
+
+    <h3>Wil je meldingen ontvangen?</h3>
+    <label class="switch">
+      <input type="checkbox" id="toggle-switch" />
+      <span class="slider round"></span>
+    </label>
+    <div id="new-content" class="hidden"></div>
+    {% set entries = craft.entries().section('meldingen') %}
+    {% for entry in entries %}
+    <img
+      class="meldingen_kat"
+      src="{{entry.meldingenFoto.one() ? entry.meldingenFoto.one().url : '/path/to/default-image.jpg'}}"
+      alt="nog geen meldingen"
+    />
+        {% endfor %}
+    
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const switchToggle = document.getElementById("toggle-switch");
+        const elementsToHide = [
+          document.querySelector(".meldingen_kat"),
+          document.querySelector("h2.subtitle"),
+          document.querySelector("h3"),
+          document.querySelector(".switch"),
+        ];
+        const newContent = document.getElementById("new-content");
+        const h2Element = document.querySelector("h2.subtitle");
+
+        function initializeLikeButtons() {
+          const likeImages = document.querySelectorAll(".like");
+
+          likeImages.forEach((likeImage) => {
+            likeImage.addEventListener("click", () => {
+              if (likeImage.src.includes("unlike.png")) {
+                likeImage.src = "images/like.png";
+              } else {
+                likeImage.src = "images/unlike.png";
+              }
+            });
+          });
+        }
+
+        switchToggle.addEventListener("change", () => {
+          if (switchToggle.checked) {
+            // Verberg de huidige elementen
+            elementsToHide.forEach((element) => {
+              element.classList.add("hidden");
+            });
+
+            // Verwijder de 'top' waarde van h2
+            h2Element.style.top = "auto";
+
+            // Voeg de nieuwe elementen toe
+            newContent.classList.remove("hidden");
+            newContent.innerHTML = `
+            <div class="artikels">
+              <a href="#">
+                <div class="artikel">
+                  <img class="artikel-image" src="images/oxfam.png" alt="oxfam" />
+                  <div class="artikel-text">
+                    <h4 class="artikel-h2">
+                      Het onrechtvaardige klimaatmodel van de grote Belgische bedrijven
+                    </h4>
+                    <p>
+                      België staat in top 10 van landen met meeste CO2-uitstoot, maar
+                      het hangt ervan af wat je exact berekent
+                    </p>
+                  </div>
+                  <img class="like" src="images/unlike.png" alt="like" />
+                </div>
+              </a>
+              <div class="artikel">
+                <img class="artikel-image" src="images/oxfam.png" alt="oxfam" />
+                <div class="artikel-text">
+                  <h4 class="artikel-h2">
+                    Het onrechtvaardige klimaatmodel van de grote Belgische bedrijven
+                  </h4>
+                  <p>
+                    België staat in top 10 van landen met meeste CO2-uitstoot, maar het
+                    hangt ervan af wat je exact berekent
+                  </p>
+                </div>
+                <img class="like" src="images/unlike.png" alt="like" />
+              </div>
+              <div class="artikel">
+                <img class="artikel-image" src="images/oxfam.png" alt="oxfam" />
+                <div class="artikel-text">
+                  <h4 class="artikel-h2">
+                    Het onrechtvaardige klimaatmodel van de grote Belgische bedrijven
+                  </h4>
+                  <p>
+                    België staat in top 10 van landen met meeste CO2-uitstoot, maar het
+                    hangt ervan af wat je exact berekent
+                  </p>
+                </div>
+                <img class="like" src="images/unlike.png" alt="like" />
+              </div>
+            </div>
+          `;
+
+            // Herinitialiseer de like-buttons
+            initializeLikeButtons();
+          } else {
+            // Toon de originele elementen weer
+            elementsToHide.forEach((element) => {
+              element.classList.remove("hidden");
+            });
+
+            // Herstel de 'top' waarde van h2
+            h2Element.style.top = "225px"; // Zet de oorspronkelijke waarde terug
+
+            // Verwijder de nieuwe elementen
+            newContent.classList.add("hidden");
+            newContent.innerHTML = ""; // Verwijder de inhoud
+          }
+        });
+
+        // Initialiseer de like-buttons bij het laden van de pagina
+        initializeLikeButtons();
+      });
+    </script>
+{% endblock  %}

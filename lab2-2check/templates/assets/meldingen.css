@@ -1,0 +1,36 @@
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 225px;
+  margin: 0 5%;
+  text-align: center;
+}
+
+.meldingen_kat {
+  width: 75%;
+  position: relative;
+  top: 298px;
+  display: block;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  top: 255px;
+  margin: 0 5%;
+  text-align: center;
+}
+
+.switch {
+  position: relative;
+  top: 270px;
+  margin: 0 auto;
+  display: block; 
+}
+
+.hidden {
+  display: none;
+}
