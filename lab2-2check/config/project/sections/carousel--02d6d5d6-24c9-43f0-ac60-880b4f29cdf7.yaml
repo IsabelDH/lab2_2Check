@@ -22,6 +22,6 @@ siteSettings:
   72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
     enabledByDefault: true
     hasUrls: true
-    template: carousel/_entry.twig
+    template: carousel/_entry1.twig
     uriFormat: 'carousel/{slug}'
 type: channel
