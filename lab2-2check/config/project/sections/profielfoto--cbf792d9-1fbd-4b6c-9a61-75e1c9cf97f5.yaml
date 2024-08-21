@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - ce57863f-4d62-4ddc-b803-6497a2a1747a # profielfoto
+handle: profielfoto
+maxAuthors: 1
+name: profielfoto
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: profielfoto/_entry.twig
+    uriFormat: profielfoto
+type: single

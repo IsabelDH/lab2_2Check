@@ -1,4 +1,4 @@
-dateModified: 1724246591
+dateModified: 1724248118
 email:
   fromEmail: isa.haes@hotmail.com
   fromName: 2Check
@@ -53,6 +53,13 @@ fs:
       path: '@webroot'
     type: craft\fs\Local
     url: '@web'
+  profielfoto:
+    hasUrls: true
+    name: profielfoto
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
   unlikeButton:
     hasUrls: true
     name: 'unlike button'
@@ -79,6 +86,7 @@ meta:
     6a29b368-5d9f-4bc6-bad9-8ddfd5598443: 'nieuw artikels' # nieuw artikels
     6ab0fbfc-4fb9-47da-aed9-c57efb665ec3: 'bewering1 uitleg' # bewering1 uitleg
     6ce5199d-3c4c-465d-81f1-7d9cc92c7cb5: 2Check # 2Check
+    6cee1da6-efd9-49b5-a1a0-c64cbd2823a3: profielfoto # profielfoto
     7b7e2a12-db70-497e-b18a-a7c30c5091a2: 'carousel default' # carousel default
     8f3c7b4d-35c5-44d6-82ea-8078c61b9648: 'gezondheid artikels' # gezondheid artikels
     8f804de6-dd92-46e8-b249-be52447a4040: patroon # patroon
@@ -88,6 +96,7 @@ meta:
     40f7c704-a6ea-41b4-8d96-dd710ae9e870: 'hoofd foto artikel' # hoofd foto artikel
     049d17ed-0f14-46ff-b095-a6c37a16a6d1: google # google
     57eae1ce-7a63-4f46-8679-22d180b96c37: unlike # unlike
+    60c513b9-5d4d-4b46-bea2-e99c8c10c220: profielfoto # profielfoto
     72bbff78-21f3-4733-a195-230c2740ee45: 2Check # 2Check
     74eda977-9b23-42f2-b723-3f6aa765ee0c: 'titel artikel' # titel artikel
     261df0be-e42b-41da-8dd5-9898c693811e: facebook # facebook
@@ -114,6 +123,8 @@ meta:
     c1766d49-d9d6-45d2-b183-e17d3a217c0d: 'economie artikels' # economie artikels
     c8270adb-098d-4979-9f74-9b64381ba1ae: patroon # patroon
     c3540767-a9af-489b-9286-387fa8734e2a: like # like
+    cbf792d9-1fbd-4b6c-9a61-75e1c9cf97f5: profielfoto # profielfoto
+    ce57863f-4d62-4ddc-b803-6497a2a1747a: profielfoto # profielfoto
     d461b1d1-fd86-4c26-889f-b62182b73714: patroon # patroon
     d632224b-b301-497d-b11e-558c7a994bf0: 'artikel categorie' # artikel categorie
     e1ff3449-bf98-4e59-a71b-827377851be1: 'klimaat artikels' # klimaat artikels
