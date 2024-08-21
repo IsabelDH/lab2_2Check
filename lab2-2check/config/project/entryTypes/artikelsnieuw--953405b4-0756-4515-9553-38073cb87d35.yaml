@@ -307,6 +307,22 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2024-08-21T12:02:34+00:00'
+            elementCondition: null
+            fieldUid: 5d10a239-715c-4442-b38e-7bbe699e9fea # artikel content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f8221ee-4d19-4802-b21a-bb07d79171f8
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: d9abbfc6-e1bc-4947-8510-ea3957148479
         userCondition: null

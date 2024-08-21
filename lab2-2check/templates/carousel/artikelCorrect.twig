@@ -1,0 +1,73 @@
+{% extends "_layoutQuiz" %}
+
+{% block content %}
+<div class="container">
+    <a onclick="history.back()" class="back-button">
+      <svg
+        class="back"
+        xmlns="http://www.w3.org/2000/svg"
+        width="35"
+        height="35"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#00263d"
+          d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42a.996.996 0 0 0-1.41 0l-6.59 6.59a.996.996 0 0 0 0 1.41l6.59 6.59a.996.996 0 1 0 1.41-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1"
+        />
+      </svg>
+    </a>
+    
+    {% set entries = craft.entries().section('carousel') %}
+    {% for entry in entries %}
+  
+    <div class="options-container" style="background-image: url('{{ entry.hoofdFotoArtikel.one() ? entry.hoofdFotoArtikel.one().url : '/path/to/default-image.jpg' }}');">
+      </div>
+    </div>
+  <div class="content-overlay">
+      <a
+      href="gezondheid.twig"
+      class="categorie-artikel active"
+      data-category="gezondheid"
+      >{{entry.artikelCategorie}}</a
+    >
+    <h1 class="h1-artikel">{{entry.headerArtikel}}</h1>
+    <div class="feedback-container hidden" id="feedbackContainer">
+      <div class="feedback correct">
+        <h2 class="feedback-correct">Correct <span>&#10003;</span></h2>
+        <p class="feedback-text">
+          Goed gedaan, u duidde het juiste antwoord aan! Voor meer duidelijke informatie worden hieronder de juiste feiten van de overheid weergegeven.
+        </p>
+      </div>
+      <div class="article-content">
+        <p> {{entry.artikelContent}}</p>
+      </div>
+      <div class="gerelateerde-artikelen">
+      <h3 class="gerelateerde-artikelen-h3">Gerelateerde artikels</h3>
+      {% set entries = craft.entries().section('politiekArtikels') %}
+    {% for entry in entries %}
+      <a href="#">
+        <div class="artikel">
+          <img
+            class="artikel-image"
+            src="{{entry.foto.one() ? entry.foto.one().url : '/path/to/default-image.jpg'}}"
+            alt="oxfam"
+          />
+          <div class="artikel-text">
+            <h2 class="artikel-h2">{{entry.headerartikels}}</h2>
+            <p class="artikel-p">
+              {{entry.ondertekst}}
+            </p>
+            <span>{{entry.datum}}</span>
+          </div>
+          <img class="like" 
+                 data-like-src="{{entry.like.one() ? entry.like.one().url : '/path/to/like-image.jpg'}}" 
+                 data-unlike-src="{{entry.unlike.one() ? entry.unlike.one().url : '/path/to/unlike-image.jpg'}}" 
+                 src="{{entry.unlike.one() ? entry.unlike.one().url : '/path/to/unlike-image.jpg'}}" 
+                 alt="like-button"/>
+        </div>
+      </a>
+      {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+ {% endblock  %}

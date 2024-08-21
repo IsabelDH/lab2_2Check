@@ -238,18 +238,28 @@ input::placeholder {
   color: #b95927;
   cursor: pointer;
 }
-.hidden {
-  display: none;
-}
+
 .feedback {
   border: #93acc2 3px solid;
   background-color: rgba(147, 172, 194, 0.2);
   border-radius: 15px;
-  margin: 0 5%;
+  margin: 10px 2%;
 }
 .feedback-text {
   margin: 5px 5%;
+
 }
+
+.feedback-correct {
+  margin: 5px 5%;
+  color: #b95927;
+}
+
+.feedback-fout {
+  margin: 5px 5%;
+  color: #b95927;
+}
+
 .article-content {
   margin: 5%;
 }

@@ -102,3 +102,11 @@ body {
   display: inline-block; 
 }
 
+
+.article-content{
+  margin-left:10px;
+}
+
+.gerelateerde-artikelen{
+  margin-left: -10px;
+}

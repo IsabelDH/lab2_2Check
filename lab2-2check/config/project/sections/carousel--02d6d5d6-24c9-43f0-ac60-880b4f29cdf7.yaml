@@ -6,14 +6,14 @@ handle: carousel
 maxAuthors: 1
 name: carousel
 previewTargets:
-  -
+  1:
     __assoc__:
       -
         - label
-        - 'Primary entry page'
+        - primary
       -
         - urlFormat
-        - '{url}'
+        - '{url)'
       -
         - refresh
         - '1'

@@ -25,7 +25,7 @@
     </div>
   <div class="content-overlay">
       <a
-      href="gezondheid.html"
+      href="gezondheid.twig"
       class="categorie-artikel active"
       data-category="gezondheid"
       >{{entry.artikelCategorie}}</a
@@ -48,7 +48,7 @@
         <div class="lijn"></div>
       </div>
 
-       <a>
+       <a href="artikelFout.twig">
       <div class="option" data-correct="false">
         <h2>{{entry.bewerking2Titel}}</h2>
         <p class="source">{{entry.bewerking2Bron}}</p>
@@ -61,23 +61,8 @@
           <div class="lijn"></div>
       </div>
       
-      <a class="button_9 button" href="home.twig">Overslaan</a>
+      <a class="button_9 button" href="artikelOverslaan.twig">Overslaan</a>
       </div>
   {% endfor %}
 
-    {# <script>
-      document.querySelectorAll(".option").forEach((option) => {
-        option.addEventListener("click", function () {
-          console.log("Option clicked");
-
-          document.getElementById("optionContainer").classList.add("hidden");
-          console.log("Option container hidden");
-          
-          document
-            .getElementById("feedbackContainer")
-            .classList.remove("hidden");
-          console.log("Feedback container shown");
-        });
-      });
-    </script> #}
  {% endblock  %}
