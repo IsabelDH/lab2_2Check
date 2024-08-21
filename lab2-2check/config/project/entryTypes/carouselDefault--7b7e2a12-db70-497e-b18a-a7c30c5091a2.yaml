@@ -99,6 +99,166 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2024-08-21T09:37:32+00:00'
+            elementCondition: null
+            fieldUid: 40f7c704-a6ea-41b4-8d96-dd710ae9e870 # hoofd foto artikel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9fa626b-36fb-4a2b-95a4-382468e51870
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:43:38+00:00'
+            elementCondition: null
+            fieldUid: d632224b-b301-497d-b11e-558c7a994bf0 # artikel categorie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dcc431f1-6cdb-472e-8c6c-d12919855099
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:16:16+00:00'
+            elementCondition: null
+            fieldUid: 74eda977-9b23-42f2-b723-3f6aa765ee0c # titel artikel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a8b953ba-3c82-483c-bee3-1d664f4472ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:27:56+00:00'
+            elementCondition: null
+            fieldUid: 2fb395ff-8e5f-42c7-8a9f-bf821b057690 # juiste feiten tekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7106d097-e36b-4685-ad44-4d57c940e573
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:32:08+00:00'
+            elementCondition: null
+            fieldUid: a08b29a6-c37b-4620-abf5-1aa612dee1dc # bewering1 titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1c3a26f-abd0-4ac4-8e78-7186594b09c1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:32:08+00:00'
+            elementCondition: null
+            fieldUid: e9597db3-8e0b-4d00-815b-4978d310ebde # bewerking2 titel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b4b6779-478e-4947-b1b8-101de01916ce
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:32:08+00:00'
+            elementCondition: null
+            fieldUid: e50cc673-9c06-4b69-90dc-9b2e7b6c70a7 # bewerking1 bron
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 107f9339-d237-4c73-99cf-2c6380b684a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:32:08+00:00'
+            elementCondition: null
+            fieldUid: 5832ec44-2ba7-4173-b102-208ad9276fbc # bewerking2 bron
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a38b45e-30dd-46d4-a941-af1877b47141
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:32:08+00:00'
+            elementCondition: null
+            fieldUid: 6ab0fbfc-4fb9-47da-aed9-c57efb665ec3 # bewering1 uitleg
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 08b4cee7-1725-4b34-9838-199496a36b64
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T10:32:08+00:00'
+            elementCondition: null
+            fieldUid: c0ffe190-38c9-4604-951c-828963f50f4e # bewerking2 uitleg
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2349481e-7470-49dd-81ba-739b5e092d39
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 4a710a3d-7be5-4c1c-b84f-17967c120a82
         userCondition: null

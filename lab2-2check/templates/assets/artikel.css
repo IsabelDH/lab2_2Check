@@ -13,6 +13,7 @@
   text-align: center; 
   width: 100%; 
   margin-bottom: 20px;
+
 }
 
 .lijn {
@@ -26,3 +27,78 @@
   padding: 0; 
   white-space: nowrap; 
 }
+
+
+.options-container {
+  position: relative;
+  display: block;
+  width: 100%; 
+  height: 300px; 
+  padding: 0; 
+  margin: 0;
+  background-size: cover; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  overflow: hidden; 
+}
+
+.container {
+  position: relative;
+  width: 100%; 
+  overflow-x: hidden; 
+}
+
+body {
+  margin: 0; 
+  overflow-x: hidden; 
+}
+
+.back-button {
+  position: absolute;
+  top: 10px; 
+  left: -6px; 
+  z-index: 10;
+}
+
+.content-overlay {
+  background-color: #F6F6F6;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  margin: 0 auto;
+  position: relative;
+  top: -50px; 
+ 
+}
+
+.h3-artikel, .h1-artikel, .option, .h2-artikel {
+  margin-bottom: 20px;
+  max-width: 1200px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+
+.option h2, .option p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.categorie-artikel {
+  background-color: #b95927;
+  color: #f6f6f6;
+  text-decoration: none;
+  margin: 10px 10px;
+  border-radius: 13px;
+  padding: 10px 20px;
+  display: inline-block;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+
+.container {
+  position: relative; 
+  display: inline-block; 
+}
+

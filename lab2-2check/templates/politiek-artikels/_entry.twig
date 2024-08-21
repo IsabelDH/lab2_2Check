@@ -1,7 +1,8 @@
 {% extends "_layoutQuiz" %}
 
 {% block content %}
-    <a onclick="history.back()">
+<div class="container">
+    <a onclick="history.back()" class="back-button">
       <svg
         class="back"
         xmlns="http://www.w3.org/2000/svg"
@@ -15,28 +16,29 @@
         />
       </svg>
     </a>
-    <img class="cover" src="images/maaltijden_school.jpeg" alt="" />
-   
-    <div class="options-container" id="optionContainer">
-      <h3 class="h3-artikel">
-        Duid het artikel aan waarvan u denkt dat deze de juiste informatie
-        weergeeft.
-      </h3>
-      <h1 class="h1-artikel">Maaltijden op school: ja of neen?</h1>
+    
+    {% set entries = craft.entries().section('politiekArtikels') %}
+    {% for entry in entries %}
+  
+    <div class="options-container" style="background-image: url('{{ entry.hoofdFotoArtikel.one() ? entry.hoofdFotoArtikel.one().url : '/path/to/default-image.jpg' }}');">
+      </div>
+    </div>
+  <div class="content-overlay">
+      <a
+      href="gezondheid.html"
+      class="categorie-artikel active"
+      data-category="gezondheid"
+      >{{entry.artikelCategorie}}</a
+    >
 
+      <h1 class="h1-artikel">{{entry.headerArtikel}}</h1>
+      <h2 class="h2-artikel">Welke geeft de juiste feiten?</h2>
+      <h3 class="h3-artikel">{{entry.juisteFeitenTekst}}</h3>
     <a href="artikelCorrect.twig">
       <div class="option" data-correct="true">
-        <h2>
-          Beels (Vooruit) pareert kritiek De Wever (N-VA) over maaltijden op
-          school: “Als het in Antwerpen kan, kan het in heel Vlaanderen”
-        </h2>
-        <p class="source">Nieuwsblad</p>
-        <p>
-          Volgens De Wever werkt het in Antwerpen als sociaal beleid, voor
-          kinderen die in kansarmoede leven. “Maar gaan we jongeren van een
-          college in Brasschaat dan een warme maaltijd geven? Alsof die ouders
-          daar zelf niet voor kunnen zorgen,” aldus De Wever.
-        </p>
+        <h2>{{entry.bewering1Titel}}</h2>
+        <p class="source">{{entry.bewerking1Bron}}</p>
+        <p>{{entry.bewering1Uitleg}}</p>
       </div>
     </a>
 
@@ -48,16 +50,9 @@
 
        <a>
       <div class="option" data-correct="false">
-        <h2>
-          De Wever torpedeert breekpunt Vooruit om gratis warme maaltijden op
-          school aan te bieden: “Eén van domste dingen die je kan doen”
-        </h2>
-        <p class="source">GVA</p>
-        <p>
-          N-VA-voorzitter Bart De Wever kant zich radicaal tegen de eis van de
-          Vlaamse socialisten om op school gratis warme maaltijden aan te
-          bieden. “Dat is voor mij een absolute neen.”
-        </p>
+        <h2>{{entry.bewerking2Titel}}</h2>
+        <p class="source">{{entry.bewerking2Bron}}</p>
+        <p>{{entry.bewerking2Uitleg}}</p>
       </div>
       </a>
       <div class="line-container">
@@ -67,7 +62,8 @@
       </div>
       
       <a class="button_9 button" href="home.twig">Overslaan</a>
-    </div>
+      </div>
+  {% endfor %}
 
     <script>
       document.querySelectorAll(".option").forEach((option) => {

@@ -1,4 +1,4 @@
-dateModified: 1724231205
+dateModified: 1724237018
 email:
   fromEmail: isa.haes@hotmail.com
   fromName: 2Check
@@ -7,6 +7,13 @@ fs:
   fotoArtikels:
     hasUrls: true
     name: foto_artikels
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
+  hoofdFotoArtikels:
+    hasUrls: true
+    name: 'hoofd foto artikels'
     settings:
       path: '@webroot'
     type: craft\fs\Local
@@ -30,34 +37,45 @@ meta:
     2c8f1234-07c8-4262-baa9-5d2d971870a0: 'header artikels' # header artikels
     2cdd72bc-1d38-4925-b04d-71748ae3ed3c: 'zoeken artikels' # zoeken artikels
     02d6d5d6-24c9-43f0-ac60-880b4f29cdf7: carousel # carousel
+    2fb395ff-8e5f-42c7-8a9f-bf821b057690: 'juiste feiten tekst' # juiste feiten tekst
     3f62a56f-6793-4e2d-b5f8-c9ed9e391cb9: 'current url' # current url
     4c619518-4eda-4616-83af-c7c45bd57fc1: like # like
     4ff99ef7-44b8-40c2-ae5e-5ffe49547c5e: 'Public Schema' # Public Schema
     5b3d35e2-3e3a-4c1e-aea4-7117f0a6e75f: 'foto artikels' # foto artikels
     5e6ea322-3552-4d3a-bebd-c4071ff51416: datum # datum
     6a29b368-5d9f-4bc6-bad9-8ddfd5598443: 'nieuw artikels' # nieuw artikels
+    6ab0fbfc-4fb9-47da-aed9-c57efb665ec3: 'bewering1 uitleg' # bewering1 uitleg
     6ce5199d-3c4c-465d-81f1-7d9cc92c7cb5: 2Check # 2Check
     7b7e2a12-db70-497e-b18a-a7c30c5091a2: 'carousel default' # carousel default
     8f3c7b4d-35c5-44d6-82ea-8078c61b9648: 'gezondheid artikels' # gezondheid artikels
     9bae6ee1-9bcc-4085-a536-e952a459f30e: 'title home' # title home
     9bd313e9-1842-4821-8e26-a7db5c405e78: unlike # unlike
+    40f7c704-a6ea-41b4-8d96-dd710ae9e870: 'hoofd foto artikel' # hoofd foto artikel
     57eae1ce-7a63-4f46-8679-22d180b96c37: unlike # unlike
     72bbff78-21f3-4733-a195-230c2740ee45: 2Check # 2Check
+    74eda977-9b23-42f2-b723-3f6aa765ee0c: 'titel artikel' # titel artikel
+    5832ec44-2ba7-4173-b102-208ad9276fbc: 'bewerking2 bron' # bewerking2 bron
     8435d9ed-8c6d-480c-9880-338bbef57700: Ondertekst # Ondertekst
     8806ec29-7040-4c68-b837-653a97b1b53f: 'header home' # header home
     14327aad-e9d5-4b95-b024-a531ee6ef91d: 'politiek artikels' # politiek artikels
+    69212d03-788a-48a7-bdb8-2359e675b493: 'hoofd foto artikel' # hoofd foto artikel
     953405b4-0756-4515-9553-38073cb87d35: 'artikels nieuw' # artikels nieuw
+    a08b29a6-c37b-4620-abf5-1aa612dee1dc: 'bewering1 titel' # bewering1 titel
     a6dc8106-631a-4f64-92ba-ed7c809e459b: 'header home' # header home
     a98c0992-0d12-4610-b20f-d26dc4bbc2a6: categories # categories
     ac064d3d-58bb-4e5a-acc4-ef5b3ee70329: 'artikels zoeken' # artikels zoeken
     aca73f93-ee27-4646-8d4f-4ac17e2ac440: foto # foto
     af5b90f4-180a-44b4-8b01-aa518a66f395: 'artikels politiek' # artikels politiek
     b7ff6b30-2938-4468-b7a2-adc695db9827: meldingen # meldingen
+    c0ffe190-38c9-4604-951c-828963f50f4e: 'bewerking2 uitleg' # bewerking2 uitleg
     c896b617-75ac-4296-a987-306fd0f94e92: 'meldingen foto' # meldingen foto
     c1766d49-d9d6-45d2-b183-e17d3a217c0d: 'economie artikels' # economie artikels
     c3540767-a9af-489b-9286-387fa8734e2a: like # like
+    d632224b-b301-497d-b11e-558c7a994bf0: 'artikel categorie' # artikel categorie
     e1ff3449-bf98-4e59-a71b-827377851be1: 'klimaat artikels' # klimaat artikels
     e2dac4d6-69ac-4344-bcf4-75c81af47031: meldingen # meldingen
+    e50cc673-9c06-4b69-90dc-9b2e7b6c70a7: 'bewerking1 bron' # bewerking1 bron
+    e9597db3-8e0b-4d00-815b-4978d310ebde: 'bewerking2 titel' # bewerking2 titel
     eba72f32-6495-4b39-8d4a-2fe2627bd933: categories # categories
     f30ffe35-cfd0-4ec3-abc1-63f83d87023e: categories # categories
 system:

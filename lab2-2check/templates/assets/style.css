@@ -189,17 +189,7 @@ input::placeholder {
   width: 100%;
   border-radius: 0;
 }
-.categorie-artikel {
-  background-color: #b95927;
-  color: #f6f6f6;
-  text-decoration: none;
-  margin: 20px 5%;
-  border-radius: 13px;
-  padding: 10px 20px;
-  display: inline-block;
-  white-space: nowrap;
-  flex: 0 0 auto;
-}
+
 .h1-artikel {
   position: unset;
   font-size: 29px;

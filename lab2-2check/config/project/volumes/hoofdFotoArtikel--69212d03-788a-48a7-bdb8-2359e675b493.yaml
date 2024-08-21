@@ -1,0 +1,66 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  b724bf02-639c-4cc4-a38b-7afd5f82f628:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-21T09:35:26+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 4ed21271-1eb9-45ad-a6ea-07f3118c811d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T09:36:48+00:00'
+            elementCondition: null
+            fieldUid: 40f7c704-a6ea-41b4-8d96-dd710ae9e870 # hoofd foto artikel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64ac19e2-9ac0-4e66-b157-c10e14e605b4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4fc79933-34d6-436b-8635-6a7f0d190836
+        userCondition: null
+fs: hoofdFotoArtikels
+handle: hoofdFotoArtikel
+name: 'hoofd foto artikel'
+sortOrder: 4
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: hoofdFotoArtikels
+transformSubpath: ''
