@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - d461b1d1-fd86-4c26-889f-b62182b73714 # patroon
+handle: patroon
+maxAuthors: 1
+name: patroon
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: patroon/_entry.twig
+    uriFormat: patroon
+type: single

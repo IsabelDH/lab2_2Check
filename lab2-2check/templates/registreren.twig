@@ -1,0 +1,58 @@
+{% extends "_layoutRegisteren" %}
+
+{% block content %}
+    <a onclick="history.back()">
+      <svg
+        class="back"
+        xmlns="http://www.w3.org/2000/svg"
+        width="35"
+        height="35"
+        viewBox="0 0 24 24"
+      >
+        <path
+          fill="#00263d"
+          d="M19 11H7.83l4.88-4.88c.39-.39.39-1.03 0-1.42a.996.996 0 0 0-1.41 0l-6.59 6.59a.996.996 0 0 0 0 1.41l6.59 6.59a.996.996 0 1 0 1.41-1.41L7.83 13H19c.55 0 1-.45 1-1s-.45-1-1-1"
+        />
+      </svg>
+    </a>
+    <h1>Registreren</h1>
+
+    <div class="voornaam input">
+      <span>Voornaam</span>
+      <input type="text" placeholder="Voornaam" />
+    </div>
+    <div class="achternaam input">
+      <span>Achternaam</span>
+      <input type="text" placeholder="Achternaam" />
+    </div>
+    <div class="email input">
+      <span>Email</span>
+      <input type="email" placeholder="Email" />
+    </div>
+    <div class="wachtwoord input">
+      <span>Wachtwoord</span>
+      <input type="password" name="" id="" placeholder="Wachtwoord" />
+    </div>
+    <div class="herhaal_wachtwoord input">
+      <span>Herhaal wachtwoord</span>
+      <input type="password" name="" id="" placeholder="Herhaal wachtwoord" />
+    </div>
+    <a class="button_6 button" href="favoriete_onderwerpen.twig">Registreren</a>
+    <div class="lijn"></div>
+{% set entries = craft.entries().section('facebook') %}
+    {% for entry in entries %}
+    <a href="#"
+      ><img id="facebook" src="{{entry.facebook.one() ? entry.facebook.one().url : '/path/to/default-image.jpg'}}" alt="facebook"
+    /></a>
+    {% endfor %}
+    {% set entries = craft.entries().section('google') %}
+    {% for entry in entries %}
+    <a href="#"><img id="google" src="{{entry.google.one() ? entry.google.one().url : '/path/to/default-image.jpg'}}" alt="google" /></a>
+    {% endfor %}
+     {% set entries = craft.entries().section('patroon') %}
+    {% for entry in entries %}
+    <span class="al_acc"
+      >Al een account? <a href="inloggen.twig">Inloggen</a></span
+    >
+    {% endfor %}
+{% endblock  %}

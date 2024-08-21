@@ -1,0 +1,53 @@
+.email {
+  position: relative;
+  top: 200px;
+}
+.wachtwoord {
+  position: relative;
+  top: 225px;
+}
+
+#ww_vergeten {
+  text-align: end;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+#ww_vergeten a {
+  text-decoration: none;
+  color: #00263d 1px solid;
+}
+.button_3 {
+  background-color: #cbb391;
+  position: relative;
+  top: 250px;
+}
+.lijn {
+  display: block;
+  border-bottom: #00263d 1px solid;
+  position: relative;
+  top: 300px;
+  margin: 0 5%;
+}
+#facebook {
+  width: 50px;
+  position: relative;
+  top: 350px;
+  margin-left: 35%;
+}
+#google {
+  width: 50px;
+  position: relative;
+  top: 350px;
+  margin-left: 5%;
+}
+.geen_acc {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 375px;
+  margin: 0 5%;
+}
+.geen_acc a {
+  text-decoration: none;
+  font-weight: bold;
+}

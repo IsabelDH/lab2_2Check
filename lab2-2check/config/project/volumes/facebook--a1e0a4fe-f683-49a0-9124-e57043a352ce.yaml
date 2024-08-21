@@ -1,0 +1,50 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  7deb515e-12c6-42a3-b995-d30419b4160a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-21T13:14:10+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 720593e0-2447-4266-a2ee-71f6ae326178
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bce83265-550a-4316-92ad-497fc9fd64cd
+        userCondition: null
+fs: facebook
+handle: facebook
+name: facebook
+sortOrder: 6
+subpath: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: facebook
+transformSubpath: ''

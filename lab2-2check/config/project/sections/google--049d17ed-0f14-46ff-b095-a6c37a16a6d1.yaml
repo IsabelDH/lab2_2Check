@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 6264eed4-2b98-4673-9d76-0bf0766e2a70 # google
+handle: google
+maxAuthors: 1
+name: google
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

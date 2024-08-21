@@ -246,17 +246,17 @@ input::placeholder {
   margin: 10px 2%;
 }
 .feedback-text {
-  margin: 5px 5%;
+  margin: 8px 5%;
 
 }
 
 .feedback-correct {
-  margin: 5px 5%;
+  margin: 10px 5%;
   color: #b95927;
 }
 
 .feedback-fout {
-  margin: 5px 5%;
+  margin:10px 5%;
   color: #b95927;
 }
 

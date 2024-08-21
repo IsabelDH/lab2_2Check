@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 261df0be-e42b-41da-8dd5-9898c693811e # facebook
+handle: facebook
+maxAuthors: 1
+name: facebook
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: facebook/_entry.twig
+    uriFormat: facebook
+type: single

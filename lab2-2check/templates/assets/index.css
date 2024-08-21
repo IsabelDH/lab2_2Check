@@ -1,0 +1,19 @@
+#startscherm_logo {
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 300px;
+  margin: 0 25%;
+}
+.button_1 {
+  background-color: #b95927;
+  color: #f6f6f6;
+  position: relative;
+  top: 350px;
+}
+.button_2 {
+  background-color: #cbb391;
+  color: #00263d;
+  position: relative;
+  top: 375px;
+}

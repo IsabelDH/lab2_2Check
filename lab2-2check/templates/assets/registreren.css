@@ -1,0 +1,63 @@
+.voornaam {
+  position: relative;
+  top: 200px;
+}
+.achternaam {
+  position: relative;
+  top: 210px;
+}
+.email {
+  position: relative;
+  top: 220px;
+}
+.wachtwoord {
+  position: relative;
+  top: 230px;
+}
+.herhaal_wachtwoord {
+  position: relative;
+  top: 240px;
+}
+
+.button_6 {
+  background-color: #cbb391;
+  position: relative;
+  top: 275px;
+}
+.lijn {
+  display: block;
+  border-bottom: #00263d 1px solid;
+  position: relative;
+  top: 315px;
+  margin: 0 5%;
+}
+#facebook {
+  width: 50px;
+  position: relative;
+  top: 350px;
+  margin-left: 35%;
+}
+#google {
+  width: 50px;
+  position: relative;
+  top: 350px;
+  margin-left: 5%;
+}
+.al_acc {
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 375px;
+  margin: 0 5%;
+}
+.al_acc a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.input input {
+  padding-left: 9px;
+
+}
+
+
