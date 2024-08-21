@@ -1,0 +1,30 @@
+{% extends "_layoutOnderwerpen" %}
+
+{% block content %}
+    <h1>Kies jouw favoriete onderwerpen</h1>
+    <p>
+      Duid aan welke onderwerpen u het meeste interesseren en u wordt via
+      meldingen op de hoogte gehouden.
+    </p>
+    <div class="flexbox">
+      <div class="onderwerp">Politiek</div>
+      <div class="onderwerp">Economie</div>
+      <div class="onderwerp">Gezondheid</div>
+      <div class="onderwerp">Klimaat</div>
+    </div>
+    <a class="button_7 button" href="home.twig">Opslaan</a>
+    <a class="button_8 button" href="home.twig">Overslaan</a>
+
+    <script>
+      // Selecteer alle elementen met de klasse 'onderwerp'
+      const onderwerpen = document.querySelectorAll(".onderwerp");
+
+      // Voeg een klik-eventlistener toe aan elk element
+      onderwerpen.forEach(function (onderwerp) {
+        onderwerp.addEventListener("click", function () {
+          // Toggle de 'active' klasse
+          onderwerp.classList.toggle("active");
+        });
+      });
+    </script>
+{% endblock  %}

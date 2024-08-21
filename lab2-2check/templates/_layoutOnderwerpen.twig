@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{craft.app.language}}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{siteName}}</title>
+        {% do craft.app.view.registerCssFile('@web/assets/normalize.css?67643') %}
+        {% do craft.app.view.registerCssFile('@web/assets/style.css?67643') %}
+        {% do craft.app.view.registerCssFile('@web/assets/favoriete_onderwerpen.css?67643') %}
+
+</head>
+ <body class="body">
+    {% block content %}
+    {# hier komt de content
+    #}
+     {% endblock %}
+</body>
+</html>
