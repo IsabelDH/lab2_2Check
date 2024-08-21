@@ -1,4 +1,4 @@
-dateModified: 1724178048
+dateModified: 1724231205
 email:
   fromEmail: isa.haes@hotmail.com
   fromName: 2Check
@@ -18,12 +18,20 @@ fs:
       path: '@webroot'
     type: craft\fs\Local
     url: '@web'
+  unlikeButton:
+    hasUrls: true
+    name: 'unlike button'
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: '@web'
 meta:
   __names__:
     2c8f1234-07c8-4262-baa9-5d2d971870a0: 'header artikels' # header artikels
     2cdd72bc-1d38-4925-b04d-71748ae3ed3c: 'zoeken artikels' # zoeken artikels
     02d6d5d6-24c9-43f0-ac60-880b4f29cdf7: carousel # carousel
     3f62a56f-6793-4e2d-b5f8-c9ed9e391cb9: 'current url' # current url
+    4c619518-4eda-4616-83af-c7c45bd57fc1: like # like
     4ff99ef7-44b8-40c2-ae5e-5ffe49547c5e: 'Public Schema' # Public Schema
     5b3d35e2-3e3a-4c1e-aea4-7117f0a6e75f: 'foto artikels' # foto artikels
     5e6ea322-3552-4d3a-bebd-c4071ff51416: datum # datum
@@ -33,7 +41,7 @@ meta:
     8f3c7b4d-35c5-44d6-82ea-8078c61b9648: 'gezondheid artikels' # gezondheid artikels
     9bae6ee1-9bcc-4085-a536-e952a459f30e: 'title home' # title home
     9bd313e9-1842-4821-8e26-a7db5c405e78: unlike # unlike
-    57eae1ce-7a63-4f46-8679-22d180b96c37: like # like
+    57eae1ce-7a63-4f46-8679-22d180b96c37: unlike # unlike
     72bbff78-21f3-4733-a195-230c2740ee45: 2Check # 2Check
     8435d9ed-8c6d-480c-9880-338bbef57700: Ondertekst # Ondertekst
     8806ec29-7040-4c68-b837-653a97b1b53f: 'header home' # header home
@@ -47,6 +55,7 @@ meta:
     b7ff6b30-2938-4468-b7a2-adc695db9827: meldingen # meldingen
     c896b617-75ac-4296-a987-306fd0f94e92: 'meldingen foto' # meldingen foto
     c1766d49-d9d6-45d2-b183-e17d3a217c0d: 'economie artikels' # economie artikels
+    c3540767-a9af-489b-9286-387fa8734e2a: like # like
     e1ff3449-bf98-4e59-a71b-827377851be1: 'klimaat artikels' # klimaat artikels
     e2dac4d6-69ac-4344-bcf4-75c81af47031: meldingen # meldingen
     eba72f32-6495-4b39-8d4a-2fe2627bd933: categories # categories

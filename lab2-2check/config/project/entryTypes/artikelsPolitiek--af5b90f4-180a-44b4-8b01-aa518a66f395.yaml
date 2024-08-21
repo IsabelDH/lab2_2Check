@@ -102,7 +102,7 @@ fieldLayouts:
           -
             dateAdded: '2024-08-19T18:44:37+00:00'
             elementCondition: null
-            fieldUid: 57eae1ce-7a63-4f46-8679-22d180b96c37 # like
+            fieldUid: 57eae1ce-7a63-4f46-8679-22d180b96c37 # unlike
             handle: null
             includeInCards: false
             instructions: null
@@ -112,6 +112,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: e23ab59f-2679-4002-b656-d60bc7bf99c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-21T09:04:40+00:00'
+            elementCondition: null
+            fieldUid: c3540767-a9af-489b-9286-387fa8734e2a # like
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79298bb4-acd9-489b-a3fe-fe4b5d865a0e
             userCondition: null
             warning: null
             width: 100

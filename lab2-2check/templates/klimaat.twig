@@ -38,7 +38,11 @@
             </p>
             <span>{{entry.datum}}</span>
           </div>
-          <img class="like" src="{{entry.like.one() ? entry.like.one().url : '/path/to/default-image.jpg'}}" />
+         <img class="like" 
+                 data-like-src="{{entry.like.one() ? entry.like.one().url : '/path/to/like-image.jpg'}}" 
+                 data-unlike-src="{{entry.unlike.one() ? entry.unlike.one().url : '/path/to/unlike-image.jpg'}}" 
+                 src="{{entry.unlike.one() ? entry.unlike.one().url : '/path/to/unlike-image.jpg'}}" 
+                 alt="like-button"/>
         </div>
       </a>
       {% endfor %}
@@ -47,19 +51,26 @@
    
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        // Selecteer alle afbeeldingen met de klasse 'like'
-        const likeImages = document.querySelectorAll(".like");
+          const likeImages = document.querySelectorAll(".like");
 
         likeImages.forEach((likeImage) => {
-          // Voeg een klik-eventlistener toe aan elke afbeelding
-          likeImage.addEventListener("click", () => {
-            // Wissel de src tussen 'like.png' en 'unlike.png'
-            if (likeImage.src.includes("unlike.png")) {
-              likeImage.src = "images/like.png";
-            } else {
-              likeImage.src = "images/unlike.png";
-            }
-          });
+            likeImage.addEventListener("click", (event) => {
+                // Prevent the default action of the anchor tag
+                event.preventDefault();
+
+                // Stop the click event from propagating to the parent elements (like the anchor tag)
+                event.stopPropagation();
+
+                const currentSrc = likeImage.src;
+                const likeSrc = likeImage.getAttribute("data-like-src");
+                const unlikeSrc = likeImage.getAttribute("data-unlike-src");
+
+                if (currentSrc === unlikeSrc) {
+                    likeImage.src = likeSrc;
+                } else {
+                    likeImage.src = unlikeSrc;
+                }
+            });
         });
       });
     </script>
