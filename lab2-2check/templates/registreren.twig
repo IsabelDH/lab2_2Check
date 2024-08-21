@@ -49,10 +49,8 @@
     {% for entry in entries %}
     <a href="#"><img id="google" src="{{entry.google.one() ? entry.google.one().url : '/path/to/default-image.jpg'}}" alt="google" /></a>
     {% endfor %}
-     {% set entries = craft.entries().section('patroon') %}
-    {% for entry in entries %}
+
     <span class="al_acc"
       >Al een account? <a href="inloggen.twig">Inloggen</a></span
     >
-    {% endfor %}
 {% endblock  %}
