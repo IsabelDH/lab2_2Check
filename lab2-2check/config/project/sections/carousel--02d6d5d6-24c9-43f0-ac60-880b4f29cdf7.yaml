@@ -13,7 +13,18 @@ previewTargets:
         - primary
       -
         - urlFormat
-        - '{url)'
+        - /carousel/entry1/artikelCorrect.twig
+      -
+        - refresh
+        - '1'
+  2:
+    __assoc__:
+      -
+        - label
+        - second
+      -
+        - urlFormat
+        - artikelFout.twig
       -
         - refresh
         - '1'
