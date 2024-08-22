@@ -143,7 +143,7 @@ input::placeholder {
 .artikel {
   display: flex;
   align-items: center;
-  margin: 15px 5%;
+  margin: 10px 5%;
   padding: 5px 4px;
   border-radius: 15px;
   background-color: #93acc2;
@@ -260,7 +260,7 @@ input::placeholder {
   margin: 5%;
 }
 .gerelateerde-artikelen-h3 {
-  margin: 0 5%;
+  margin: 20px 5%;
 }
 
 .footer {
