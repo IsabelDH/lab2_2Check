@@ -1,10 +1,10 @@
 
   .subtitle {
-    position: relative;
-    top: 200px;
+    /* position: relative;
+    top: 200px; */
     font-weight: 300;
     font-size: 1.25em;
-    margin: 0 5% 35px 5%;
+    margin:20px 5% 20px 5%;
   }
 
   .zoekbalk {
@@ -14,8 +14,7 @@
     padding: 3px 8px;      
     margin-right: 20px;  
     margin-left: 20px;       
-    position: relative;
-    top: 180px;
+    margin-top: 190px;
     border-radius: 30px;
     border: 2px solid  #00263D ;
     background-color:  #F6F6F6;     
@@ -39,8 +38,5 @@
   color: #00263D;
 }
 
-.artikels{
-  position: relative;
-  top: 200px;
-}
+
 

@@ -260,9 +260,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-08-21T12:02:26+00:00'
+            dateAdded: '2024-08-22T10:16:38+00:00'
             elementCondition: null
-            fieldUid: 5d10a239-715c-4442-b38e-7bbe699e9fea # artikel content
+            fieldUid: 1f33d69d-8d75-45c8-9391-607adb4ffa40
             handle: null
             includeInCards: false
             instructions: null
@@ -271,7 +271,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 20579468-4cc5-4bd4-af36-b081a90f2435
+            uid: bcb2b88a-d107-47b1-af11-4e58a6641c40
             userCondition: null
             warning: null
             width: 100

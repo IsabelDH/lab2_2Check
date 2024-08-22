@@ -25,9 +25,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 800px;
-  margin: 10px;
-  position: relative;
-  top: 250px;
+  margin: 60% 10px 50% 10px;
 }
 .button_7 {
   background-color: #b95927;

@@ -310,7 +310,7 @@ fieldLayouts:
           -
             dateAdded: '2024-08-21T12:02:34+00:00'
             elementCondition: null
-            fieldUid: 5d10a239-715c-4442-b38e-7bbe699e9fea # artikel content
+            fieldUid: 5d10a239-715c-4442-b38e-7bbe699e9fea
             handle: null
             includeInCards: false
             instructions: null

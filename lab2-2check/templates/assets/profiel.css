@@ -23,20 +23,6 @@ h1 {
   height: auto;
   margin-right: 35px;
 }
-.meldingen_kat {
-  width: 75%;
-  position: relative;
-  top: 250px;
-  display: block;
-  margin: 0 auto;
-}
-
-.switch {
-  position: relative;
-  top: 300px;
-  margin: 0 auto;
-  display: block; 
-}
 
 .hidden {
   display: none;

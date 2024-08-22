@@ -1,10 +1,8 @@
 .email {
-  position: relative;
-  top: 200px;
+  margin-top: 190px;
 }
 .wachtwoord {
-  position: relative;
-  top: 225px;
+  margin-top: 20px;
 }
 
 #ww_vergeten {
@@ -18,36 +16,34 @@
 }
 .button_3 {
   background-color: #cbb391;
-  position: relative;
-  top: 250px;
+  margin-top: 40px;
 }
 .lijn {
   display: block;
   border-bottom: #00263d 1px solid;
   position: relative;
-  top: 300px;
-  margin: 0 5%;
+  margin: 40px 5%;
 }
 #facebook {
   width: 50px;
-  position: relative;
-  top: 350px;
   margin-left: 35%;
 }
 #google {
   width: 50px;
-  position: relative;
-  top: 350px;
   margin-left: 5%;
 }
 .geen_acc {
   display: block;
   text-align: center;
-  position: relative;
-  top: 375px;
-  margin: 0 5%;
+  margin: 40px 5%;
 }
 .geen_acc a {
   text-decoration: none;
   font-weight: bold;
+}
+
+
+.back{
+  margin-right: 20px;
+  margin-top: -120px;
 }

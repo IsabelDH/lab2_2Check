@@ -1,7 +1,5 @@
 p {
-  position: relative;
-  top: 225px;
-  margin: 0 5%;
+  margin: 210px 5% 0 5%;
 }
 .onderwerp {
   flex: 1 1 calc(50% - 20px);
@@ -25,18 +23,14 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 800px;
-  margin: 10px;
-  position: relative;
-  top: 220px;
+  margin: 20px 10px 10px 10px;
 }
 .button_7 {
   background-color: #b95927;
   color: #f6f6f6;
-  position: relative;
-  top: 250px;
+  margin-top: 40px;
 }
 .button_8 {
   background-color: #cbb391;
-  position: relative;
-  top: 265px;
+  margin-top: 20px;
 }

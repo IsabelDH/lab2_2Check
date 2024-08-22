@@ -1,16 +1,12 @@
 .email {
-  position: relative;
-  top: 200px;
+  margin-top: 190px;
 }
 
 .button_4 {
   background-color: #cbb391;
-  position: relative;
-  top: 225px;
+  margin-top: 40px;
 }
 
 p {
-  position: relative;
-  top: 185px;
-  margin: 0 5%;
+  margin: 190px 5%;
 }
