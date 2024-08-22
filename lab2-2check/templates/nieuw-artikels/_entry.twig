@@ -16,16 +16,13 @@
         />
       </svg>
     </a>
-    
-    {% set entries = craft.entries().section('nieuwArtikels') %}
-    {% for entry in entries %}
   
     <div class="options-container" style="background-image: url('{{ entry.hoofdFotoArtikel.one() ? entry.hoofdFotoArtikel.one().url : '/path/to/default-image.jpg' }}');">
       </div>
     </div>
   <div class="content-overlay">
       <a
-      href="gezondheid.html"
+      href="gezondheid.twig"
       class="categorie-artikel active"
       data-category="gezondheid"
       >{{entry.artikelCategorie}}</a
@@ -63,7 +60,6 @@
       
       <a class="button_9 button" href="home.twig">Overslaan</a>
       </div>
-  {% endfor %}
 
     <script>
       document.querySelectorAll(".option").forEach((option) => {

@@ -4,45 +4,18 @@
  {% set entries = craft.entries().section('headerHome') %}
     {% for entry in entries %}
   <h1>{{entry.titleHome}}</h1>
-    <p class="categorie-text">Categorieën</p>
-     <div class="categories">
-      <a href="home.twig" class="categorie active" data-category="Recent">Recent</a>
-      <a href="politiek.twig" class="categorie " data-category="politiek"
-        >Politiek</a
-      >
-      <a href="economie.twig" class="categorie" data-category="economie"
-        >Economie</a
-      >
-      <a href="gezondheid.twig" class="categorie" data-category="gezondheid"
-        >Gezondheid</a
-      >
-      <a href="klimaat.twig" class="categorie" data-category="klimaat"
-        >Klimaat</a
-      >
-    </div>
-    {# {% set categories = craft.entries().section('categories').all() %}
-    {% set currentUrl = craft.app.request.getUrl %}
+   {% endfor %}
 
-    <div class="categories">
-     {% for cat in categories %}
-     {% set isActive = cat.Url == currentUrl %}
-    <a href="{{ cat.Url }}" class="categorie {% if isActive %}active{% endif %}" data-category="{{ cat.slug }}">
-      {{ cat.title }}
-    </a>
-       {% endfor %}
-    </div> #}
+ 
 
-
-    
-  {% endfor %}
-    <div id="carousel">
-    {% set entries = craft.entries().section('carousel').all() %}
+  <div id="carousel">
+    {% set entries = craft.entries().section('carousel') %}
     {% for entry in entries %}
       <a href="{{ entry.url }}">
         <div class="carousel-item">
           <img
             src="{{entry.foto.one() ? entry.foto.one().url : '/path/to/default-image.jpg'}}"
-            alt="maaltijd school"
+            alt=""
             class="carousel-image"
           />
           <div class="carousel-flex">

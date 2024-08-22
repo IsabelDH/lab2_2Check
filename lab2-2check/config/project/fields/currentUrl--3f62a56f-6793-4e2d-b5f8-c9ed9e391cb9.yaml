@@ -14,7 +14,7 @@ settings:
             -
               - sources
               -
-                - 'section:f30ffe35-cfd0-4ec3-abc1-63f83d87023e' # categories
+                - 'section:f30ffe35-cfd0-4ec3-abc1-63f83d87023e'
   types:
     - url
     - entry

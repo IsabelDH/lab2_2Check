@@ -17,9 +17,6 @@
       </svg>
     </a>
     
-    {% set entries = craft.entries().section('carousel') %}
-    {% for entry in entries %}
-  
     <div class="options-container" style="background-image: url('{{ entry.hoofdFotoArtikel.one() ? entry.hoofdFotoArtikel.one().url : '/path/to/default-image.jpg' }}');">
       </div>
     </div>
@@ -63,6 +60,6 @@
       
       <a class="button_9 button" href="artikelOverslaan.twig">Overslaan</a>
       </div>
-  {% endfor %}
+
 
  {% endblock  %}

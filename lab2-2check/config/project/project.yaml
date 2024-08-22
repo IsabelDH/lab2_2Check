@@ -1,4 +1,4 @@
-dateModified: 1724248118
+dateModified: 1724308010
 email:
   fromEmail: isa.haes@hotmail.com
   fromName: 2Check
@@ -132,7 +132,6 @@ meta:
     e50cc673-9c06-4b69-90dc-9b2e7b6c70a7: 'bewerking1 bron' # bewerking1 bron
     e9597db3-8e0b-4d00-815b-4978d310ebde: 'bewerking2 titel' # bewerking2 titel
     eba72f32-6495-4b39-8d4a-2fe2627bd933: categories # categories
-    f30ffe35-cfd0-4ec3-abc1-63f83d87023e: categories # categories
     fa58d604-e2d4-4f50-89ee-1da0ca242425: facebook # facebook
 plugins:
   simple-text:

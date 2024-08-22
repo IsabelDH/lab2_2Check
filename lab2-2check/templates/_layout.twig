@@ -10,10 +10,27 @@
 
 </head>
  <body class="body">
+        <h2 class="categorie-text">Categorieën</h2>
+     <div class="categories">
+      <a href="home.twig" class="categorie active" data-category="Recent">Recent</a>
+      <a href="politiek.twig" class="categorie " data-category="politiek"
+        >Politiek</a
+      >
+      <a href="economie.twig" class="categorie" data-category="economie"
+        >Economie</a
+      >
+      <a href="gezondheid.twig" class="categorie" data-category="gezondheid"
+        >Gezondheid</a
+      >
+      <a href="klimaat.twig" class="categorie" data-category="klimaat"
+        >Klimaat</a
+      >
+    </div>
     {% block content %}
     {# hier komt de content
     #}
-     {% endblock %}
+ {% endblock %}
+  
 
  <div class="footer">
       <a href="home.twig">
@@ -89,5 +106,6 @@
         </div>
       </a>
     </div>
+        
 </body>
 </html>
