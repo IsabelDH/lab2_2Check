@@ -1,6 +1,8 @@
 {% extends "_layoutQuiz" %}
 
 {% block content %}
+{% set entries = craft.entries().section('contentCorrect') %}
+    {% for entry in entries %}
 <div class="container">
     <a onclick="history.back()" class="back-button">
       <svg
@@ -28,20 +30,15 @@
       data-category="gezondheid"
       >{{entry.artikelCategorie}}</a
     >
-    <h1 class="h1-artikel">{{entry.headerArtikel}}</h1>
-    <div class="feedback-container hidden" id="feedbackContainer">
-      <div class="feedback correct">
-        <h2 class="feedback-correct">Correct <span>&#10003;</span></h2>
-        <p class="feedback-text">
-          Goed gedaan, u duidde het juiste antwoord aan! Voor meer duidelijke informatie worden hieronder de juiste feiten van de overheid weergegeven.
-        </p>
-      </div>
+
+    <h1 class="h1-artikel">{{entry.headerartikels}}</h1>
       <div class="article-content">
-        <p> {{entry.artikelContent}}</p>
+        <p> {{entry.artikelContentJuist}}</p>
       </div>
+           {% endfor %}
       <div class="gerelateerde-artikelen">
       <h3 class="gerelateerde-artikelen-h3">Gerelateerde artikels</h3>
-      {% set entries = craft.entries().section('politiekArtikels') %}
+ {% set entries = craft.entries().section('economieArtikels') %}
     {% for entry in entries %}
       <a href="#">
         <div class="artikel">
@@ -64,8 +61,9 @@
                  alt="like-button"/>
         </div>
       </a>
-      {% endfor %}
+{% endfor %}
       </div>
+          
     </div>
-
+ 
  {% endblock  %}

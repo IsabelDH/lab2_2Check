@@ -110,9 +110,7 @@ input::placeholder {
   justify-content: center;
 }
 .categorie-text {
-  margin: 0 5%;
-  position: relative;
-  top: 190px;
+  margin: 180px 5% 0 5%;
   color: #b95927;
   font-weight: 500;
   font-size: 20px;
@@ -124,8 +122,6 @@ input::placeholder {
   white-space: nowrap;
   margin: 0 5%;
   padding: 10px 0;
-  position: relative;
-  top: 185px;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }

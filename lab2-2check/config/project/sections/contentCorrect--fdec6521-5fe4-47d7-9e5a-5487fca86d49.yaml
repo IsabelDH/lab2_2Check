@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 933630bc-544b-46ad-bfb4-605a60b97160 # artikel correct
+handle: contentCorrect
+maxAuthors: 1
+name: 'content correct'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  72bbff78-21f3-4733-a195-230c2740ee45: # 2Check
+    enabledByDefault: true
+    hasUrls: true
+    template: contentCorrect/_entry.twig
+    uriFormat: 'content/{slug}'
+type: channel

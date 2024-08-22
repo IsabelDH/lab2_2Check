@@ -1,0 +1,195 @@
+color: null
+fieldLayouts:
+  7afb9df5-7d30-4e72-ad74-c96e6c47ae45:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-08-22T11:14:24+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 20372c93-dec6-4d8c-b5f1-08c5b5b831c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T12:28:53+00:00'
+            elementCondition: null
+            fieldUid: 40f7c704-a6ea-41b4-8d96-dd710ae9e870 # hoofd foto artikel
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22007b42-69f4-40c5-9492-1814ad34d3a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T12:41:50+00:00'
+            elementCondition: null
+            fieldUid: d632224b-b301-497d-b11e-558c7a994bf0 # artikel categorie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5782360-658f-4fb5-b719-a23dae0c436e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:17:19+00:00'
+            elementCondition: null
+            fieldUid: 2c8f1234-07c8-4262-baa9-5d2d971870a0 # header artikels
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be2d56b0-8b0a-4f4c-a606-52d5ea543f2b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:54:55+00:00'
+            elementCondition: null
+            fieldUid: 8435d9ed-8c6d-480c-9880-338bbef57700 # Ondertekst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42b9914b-3a3c-4783-b715-9a4aa8dd1fe0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:54:55+00:00'
+            elementCondition: null
+            fieldUid: aca73f93-ee27-4646-8d4f-4ac17e2ac440 # foto
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 601d6810-9230-4a2d-9822-450f8f80741b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:17:19+00:00'
+            elementCondition: null
+            fieldUid: b6e2bde6-6892-4b83-a596-19ae21aaf7c6 # artikel content juist
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9de3f281-35e1-4168-94f7-f305d6d0a4af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:54:55+00:00'
+            elementCondition: null
+            fieldUid: 5e6ea322-3552-4d3a-bebd-c4071ff51416 # datum
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c78cefd9-2ec7-4f4d-9b8b-6ca38cd2fd1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:54:55+00:00'
+            elementCondition: null
+            fieldUid: 57eae1ce-7a63-4f46-8679-22d180b96c37 # unlike
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 44535e0c-db0e-482d-9b51-5288f5ec0e13
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-08-22T11:54:55+00:00'
+            elementCondition: null
+            fieldUid: c3540767-a9af-489b-9286-387fa8734e2a # like
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e74ba758-0e66-4334-865c-2cd2f4af80d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c3dd6c83-6e97-4c1e-a5b6-82bdaa4ced53
+        userCondition: null
+handle: artikelCorrect
+hasTitleField: true
+icon: ''
+name: 'artikel correct'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
