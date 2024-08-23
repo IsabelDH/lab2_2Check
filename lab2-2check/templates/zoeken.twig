@@ -31,8 +31,10 @@
     {% endif %}
     
     {% if entries | length %}
-        <h2 class="subtitle">Artikels die jou misschien zouden interesseren</h2>
         <div class="artikels">
+            {% if not searchQuery %}
+                <h2 class="subtitle">Artikels die jou misschien zouden interesseren</h2>
+            {% endif %}
             {% for entry in entries %}
                 <a href="{{ entry.url }}">
                     <div class="artikel">
