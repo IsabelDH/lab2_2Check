@@ -32,7 +32,7 @@
       <h2 class="h2-artikel">Welke geeft de juiste feiten?</h2>
       <h3 class="h3-artikel">{{entry.juisteFeitenTekst}}</h3>
     
-    <a href="{{ url('contentCorrect.twig') }}">
+    <a href="{{ url('contentOnjuist.twig') }}">
       <div class="option" data-correct="true">
         <h2>{{entry.bewering1Titel}}</h2>
         <p class="source">{{entry.bewerking1Bron}}</p>
@@ -48,7 +48,7 @@
         <div class="lijn"></div>
       </div>
 
-       <a href="{{ url('contentOnjuist.twig') }}">
+       <a href="{{ url('contentCorrect.twig') }}">
       <div class="option" data-correct="false">
         <h2>{{entry.bewerking2Titel}}</h2>
         <p class="source">{{entry.bewerking2Bron}}</p>

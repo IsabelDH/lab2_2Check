@@ -2,6 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   - 7b7e2a12-db70-497e-b18a-a7c30c5091a2 # carousel default
+  - 933630bc-544b-46ad-bfb4-605a60b97160 # artikel correct
 handle: carousel
 maxAuthors: 2
 name: carousel
